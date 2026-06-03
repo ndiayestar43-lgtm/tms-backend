@@ -11,7 +11,10 @@
     "lint": "eslint src --ext .ts"
   },
   "dependencies": {
+<<<<<<< HEAD
     "axios": "^1.17.0",
+=======
+>>>>>>> 3826ce4142d314d4c3529a1d6a32bb1163e5ba19
     "bcryptjs": "^2.4.3",
     "cloudinary": "^2.2.0",
     "cors": "^2.8.5",
