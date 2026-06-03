@@ -10,15 +10,13 @@
     "seed": "ts-node src/utils/seed.ts",
     "lint": "eslint src --ext .ts"
   },
-  "dependencies": {
-<<<<<<< HEAD
-    "axios": "^1.17.0",
-=======
->>>>>>> 3826ce4142d314d4c3529a1d6a32bb1163e5ba19
-    "bcryptjs": "^2.4.3",
-    "cloudinary": "^2.2.0",
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.5",
+
+"dependencies": {
+"axios": "^1.17.0",
+"bcryptjs": "^2.4.3",
+"cloudinary": "^2.2.0",
+"cors": "^2.8.5",
+"dotenv": "^16.4.5",
     "express": "^4.19.2",
     "express-mongo-sanitize": "^2.2.0",
     "express-rate-limit": "^7.3.1",
