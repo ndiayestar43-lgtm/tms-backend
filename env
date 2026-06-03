@@ -1,0 +1,60 @@
+# ================================
+# TMS CONNECT — .env CORRIGÉ
+# ================================
+
+NODE_ENV=development
+
+# ── MongoDB Atlas ✅
+# Le mot de passe correct est X-UBg2fwfddM76H (pas TMS2026)
+# La ligne était commentée avec # — on l'a décommentée
+MONGODB_URI=mongodb+srv://ndiayestar43_db_user:X-UBg2fwfddM76H@cluster0.kltjgjf.mongodb.net/tms_connect?retryWrites=true&w=majority&appName=Cluster0
+
+# ── JWT — IMPORTANT : remplace par de vraies clés aléatoires ✅
+# Génère-les avec : node -e "console.log(require('crypto').randomBytes(48).toString('hex'))"
+JWT_SECRET=8f3a9c2d1e7b4f6a0c5d8e2f1b9a3c7d4e6f2a0b8c1d5e9f3a7b2c6d0e4f8a1b
+JWT_EXPIRES_IN=15m
+JWT_REFRESH_SECRET=2b9c4d7e1f3a6b0c8d2e5f9a1b4c7d3e6f0a2b5c8d1e4f7a0b3c6d9e2f5a8b1c
+JWT_REFRESH_EXPIRES_IN=7d
+BCRYPT_ROUNDS=12
+
+# ── PayDunya ⏳ (en attente de validation — 24-48h)
+# Dès que PayDunya valide ton compte, va dans "Intégrez notre API"
+# et copie les 3 clés ici
+PAYDUNYA_MASTER_KEY=COLLER_ICI_QUAND_RECU
+PAYDUNYA_PRIVATE_KEY=COLLER_ICI_QUAND_RECU
+PAYDUNYA_TOKEN=COLLER_ICI_QUAND_RECU
+PAYDUNYA_MODE=test
+PAYDUNYA_BASE_URL=https://app.paydunya.com/sandbox-api/v1
+
+# ── Resend ✅
+# Colle ta vraie clé (celle que tu as copiée)
+RESEND_API_KEY=re_7QvdRs6S_3Bt5dvD2rjTojQNiidAeZFBo
+# En test, utilise cette adresse — pas besoin de domaine vérifié
+EMAIL_FROM=onboarding@resend.dev
+EMAIL_FROM_NAME=Touba Mbacké Santé
+
+# ── Cloudinary ✅
+# Valeurs vues sur ton écran
+CLOUDINARY_CLOUD_NAME=dh3r19k7t
+CLOUDINARY_API_KEY=492371617762196
+# Va sur cloudinary.com → Settings → API Keys → clique sur l'œil pour voir le secret
+CLOUDINARY_API_SECRET=jaFgjp1f10vLccuicDjv2HvfcbQ
+
+# ── OpenAI ⏳ (ajouter 5$ de crédit puis créer la clé)
+OPENAI_API_KEY=COLLER_ICI_QUAND_CREE
+OPENAI_MODEL=gpt-4o-mini
+
+# ── URLs (pour tester en local)
+FRONTEND_URL=http://localhost:3000
+PRODUCTION_URL=https://membre.tms.sn
+NEXT_PUBLIC_API_URL=http://localhost:5000/api
+NEXT_PUBLIC_APP_URL=http://localhost:3000
+
+# ── Compte Super Admin
+ADMIN_EMAIL=ndiayestar43@gmail.com
+ADMIN_PASSWORD=TMS@Admin2026!
+ADMIN_NAME=Serigne Ndiaye
+
+# ── Rate Limiting
+RATE_LIMIT_WINDOW_MS=900000
+RATE_LIMIT_MAX=100
