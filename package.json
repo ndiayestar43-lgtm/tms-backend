@@ -49,3 +49,7 @@
     "typescript": "^5.5.2"
   }
 }
+"scripts": {
+  "build": "tsc --noEmitOnError false",
+  "start": "node dist/server.js"
+}
